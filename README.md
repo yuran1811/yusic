@@ -5,18 +5,27 @@
 - Command:
 
 ```bash
-node cli.js 5 "do re mi"
+bun src 5 "do re mi"
+
+# From file
+bun src \
+  -s -5 \
+  -i ./samples/waltz-no-2.txt \
+  -o ./output/waltz-no-2-down5.txt \
+  --style sharp --overrides "10:flat"
+# or
+cat ./samples/waltz-no-2.txt | bun src -s -5 --style sharp --overrides "10:flat"
 ```
 
 - Pipe output to clipboard:
 
 ```bash
 # Mac
-node transpose.js 2 song.txt | pbcopy
+bun src -s -5 -i ./samples/waltz-no-2.txt | pbcopy
 
 # Windows
-node transpose.js 2 song.txt | clip
+bun src -s -5 -i ./samples/waltz-no-2.txt | clip
 
 # Linux
-node transpose.js 2 song.txt | xclip -selection clipboard
+bun src -s -5 -i ./samples/waltz-no-2.txt | xclip -selection clipboard
 ```

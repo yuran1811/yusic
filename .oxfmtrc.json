@@ -1,3 +1,31 @@
 {
-  "ignorePatterns": []
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": true,
+  "quoteProps": "consistent",
+  "sortImports": {
+    "groups": [
+      "type-import",
+      "value-builtin",
+      { "newlinesBetween": true },
+      "value-external",
+      "type-internal",
+      "value-internal",
+      ["type-parent", "type-sibling", "type-index"],
+      ["value-parent", "value-sibling", "value-index"],
+      "style",
+      "unknown"
+    ]
+  },
+  "sortTailwindcss": {
+    "attributes": [":class"],
+    "functions": ["clsx", "cn", "cva", "tw"]
+  },
+  "sortPackageJson": {
+    "sortScripts": true
+  },
+  "jsdoc": {
+    "preferTypeSyntax": true
+  },
+  "ignorePatterns": ["**/*.lock", "**/skills/**", ".github/agents/**"]
 }

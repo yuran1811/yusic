@@ -1,0 +1,45 @@
+{
+  "name": "yusic",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/yuran1811/yusic#readme",
+  "bugs": {
+    "url": "https://github.com/yuran1811/yusic/issues"
+  },
+  "license": "MIT",
+  "author": "yuran1811",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuran1811/yusic.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": "./dist/index.mjs",
+  "scripts": {
+    "build": "tsdown",
+    "fmt": "oxfmt",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@clack/prompts": "^1.5.1",
+    "commander": "^15.0.0",
+    "picocolors": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "@typescript/native-preview": "7.0.0-dev.20260610.1",
+    "oxfmt": "^0.54.0",
+    "oxlint": "^1.69.0",
+    "oxlint-tsgolint": "^0.23.0",
+    "tsdown": "^0.22.2",
+    "typescript": "^6.0.3"
+  }
+}
