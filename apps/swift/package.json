@@ -2,6 +2,7 @@
   "name": "@yusic/swift",
   "version": "0.1.0",
   "scripts": {
+    "dev": "swift run",
     "fmt": "swift-format format --in-place --recursive ./Sources",
     "lint": "swift-format lint --recursive ./Sources"
   }

@@ -26,6 +26,7 @@
   "scripts": {
     "@cli": "turbo run --filter=@yusic/cli",
     "@doc": "turbo run --filter=@yusic/doc",
+    "@swift": "turbo run --filter=@yusic/swift",
     "build": "turbo run build --summarize && bun .github/scripts/build-sizes.ts",
     "clean": "bash ./scripts/clean.sh",
     "fmt": "turbo run fmt && oxfmt",
