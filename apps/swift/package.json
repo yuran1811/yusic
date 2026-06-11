@@ -2,8 +2,11 @@
   "name": "@yusic/swift",
   "version": "0.1.0",
   "scripts": {
+    "build": "swift build",
     "dev": "swift run",
     "fmt": "swift-format format --in-place --recursive ./Sources",
-    "lint": "swift-format lint --recursive ./Sources"
+    "lint": "swift-format lint --recursive ./Sources",
+    "start": "swift run",
+    "test": "swift test"
   }
 }
