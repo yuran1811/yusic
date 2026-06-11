@@ -27,5 +27,5 @@
   "jsdoc": {
     "preferTypeSyntax": true
   },
-  "ignorePatterns": ["**/*.lock", "**/skills/**", ".github/agents/**"]
+  "ignorePatterns": ["**/*.lock", "**/skills/**", ".github/agents/**", "**/components/ui/**"]
 }
