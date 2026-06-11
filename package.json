@@ -28,9 +28,9 @@
     "@doc": "turbo run --filter=@yusic/doc",
     "build": "turbo run build --summarize && bun .github/scripts/build-sizes.ts",
     "clean": "bash ./scripts/clean.sh",
-    "fmt": "oxfmt",
-    "lint": "oxlint",
-    "lint:fix": "oxlint --fix",
+    "fmt": "turbo run fmt && oxfmt",
+    "lint": "turbo run lint && oxlint",
+    "lint:fix": "turbo run lint:fix && oxlint --fix",
     "postinstall": "[ -f .github/scripts/deps-manager.ts ] && bun .github/scripts/deps-manager.ts || true",
     "typecheck": "turbo run typecheck --summarize"
   },

@@ -10,6 +10,18 @@
       "persistent": true,
       "cache": false
     },
+    "fmt": {
+      "dependsOn": ["^fmt"],
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^lint"],
+      "cache": false
+    },
+    "lint:fix": {
+      "dependsOn": ["^lint:fix"],
+      "cache": false
+    },
     "start": {
       "persistent": true,
       "cache": false

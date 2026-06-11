@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:yusic}/apps/swift",
+      "name": "Debug @yusic/server (apps/swift)",
+      "target": "@yusic/server",
+      "configuration": "debug",
+      "preLaunchTask": "swift: Build Debug @yusic/server (apps/swift)"
+    },
+    {
+      "type": "swift",
+      "request": "launch",
+      "args": [],
+      "cwd": "${workspaceFolder:yusic}/apps/swift",
+      "name": "Release @yusic/server (apps/swift)",
+      "target": "@yusic/server",
+      "configuration": "release",
+      "preLaunchTask": "swift: Build Release @yusic/server (apps/swift)"
+    }
+  ]
+}
