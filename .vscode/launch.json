@@ -5,20 +5,20 @@
       "request": "launch",
       "args": [],
       "cwd": "${workspaceFolder:yusic}/apps/swift",
-      "name": "Debug @yusic/server (apps/swift)",
-      "target": "@yusic/server",
+      "name": "Debug @yusic/swift (apps/swift)",
+      "target": "@yusic/swift",
       "configuration": "debug",
-      "preLaunchTask": "swift: Build Debug @yusic/server (apps/swift)"
+      "preLaunchTask": "swift: Build Debug @yusic/swift (apps/swift)"
     },
     {
       "type": "swift",
       "request": "launch",
       "args": [],
       "cwd": "${workspaceFolder:yusic}/apps/swift",
-      "name": "Release @yusic/server (apps/swift)",
-      "target": "@yusic/server",
+      "name": "Release @yusic/swift (apps/swift)",
+      "target": "@yusic/swift",
       "configuration": "release",
-      "preLaunchTask": "swift: Build Release @yusic/server (apps/swift)"
+      "preLaunchTask": "swift: Build Release @yusic/swift (apps/swift)"
     }
   ]
 }

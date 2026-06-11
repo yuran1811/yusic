@@ -1,4 +1,4 @@
-# @yusic/server
+# @yusic/swift
 
 💧 A project built with the Vapor web framework.
 

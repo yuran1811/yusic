@@ -11,9 +11,11 @@ func routes(_ app: Application) throws {
   }
 
   app.get("hello", ":name") { req async throws -> String in
-    // 2
     let name = try req.parameters.require("name")
-    // 3
+
+    let number = Int.random(in: 1...100)
+    req.logger.info("The number is: \(number)")
+
     return "Hello, \(name.capitalized)!"
   }
 

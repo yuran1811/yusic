@@ -11,8 +11,11 @@
     "*.mdx": "mdx"
   },
 
-  "[feature]": {
-    "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
+  "[leaf]": {
+    "editor.defaultFormatter": "Vapor.vapor-vscode"
+  },
+  "[swift]": {
+    "editor.defaultFormatter": "swiftlang.swift-vscode"
   },
 
   "chat.promptFilesRecommendations": {

@@ -25,6 +25,13 @@ public func configure(_ app: Application) async throws {
 
   app.views.use(.leaf)
 
+  app.middleware.use(
+    RateLimiterMiddleware(
+      maxRequests: 4,
+      window: 1
+    )
+  )
+
   // register routes
   try routes(app)
 }

@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "@yusic/server",
+    name: "@yusic/swift",
     platforms: [
        .macOS(.v13)
     ],
@@ -20,7 +20,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "@yusic/server",
+            name: "@yusic/swift",
             dependencies: [
                 .product(name: "Fluent", package: "fluent"),
                 .product(name: "FluentPostgresDriver", package: "fluent-postgres-driver"),
@@ -32,9 +32,9 @@ let package = Package(
             swiftSettings: swiftSettings
         ),
         .testTarget(
-            name: "@yusic/serverTests",
+            name: "@yusic/swiftTests",
             dependencies: [
-                .target(name: "@yusic/server"),
+                .target(name: "@yusic/swift"),
                 .product(name: "VaporTesting", package: "vapor"),
             ],
             swiftSettings: swiftSettings
